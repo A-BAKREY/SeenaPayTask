@@ -56,4 +56,10 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.ViewHolderClass>(){
             return listOfData?.size!!
         }
     }
+
+    private var onItemClickListener: ((RecycleList) -> Unit)? = null
+    fun setOnItemClickListener(listener: (RecycleList) -> Unit) {
+        onItemClickListener = listener
+    }
+
 }
