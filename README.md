@@ -18,5 +18,5 @@ Dagger2, Rx for the above demo.
 functionality implemented.
 -Unit test
 # Photo
-![1](https://user-images.githubusercontent.com/40058343/155294589-a2c45e3e-d66c-446a-9101-79388b9eceae.jpg)
 ![2](https://user-images.githubusercontent.com/40058343/155294602-716fb40d-68b7-4a61-9b2f-b64349eb12d5.jpg)
+![1](https://user-images.githubusercontent.com/40058343/155294589-a2c45e3e-d66c-446a-9101-79388b9eceae.jpg)
