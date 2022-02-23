@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SeenaPayTask</string>
+    <string name="published_by">published-by</string>
+    <string name="title">title:</string>
+    <string name="rate">rate:</string>
+    <string name="published_date">published-date:</string>
+    <string name="the_black_bing">The Black Bing</string>
+    <string name="ahmed">Ahmed</string>
+    <string name="good">good</string>
+    <string name="summary">"Summary:"</string>
+    <string name="_2002_9_1">2002/9/1</string>
+    <string name="details">Details</string>
+</resources>

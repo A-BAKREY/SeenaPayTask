@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presention.DetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow"
+            android:layout_weight="4"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:layout_marginStart="60dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/TVtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            tools:ignore="RtlSymmetry"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/the_black_bing"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layer1"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/TVpublishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/published_by"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            tools:ignore="RtlSymmetry"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/ETpublishBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ahmed"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TVpublishBy"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layer2"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/TVrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text="@string/rate"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/ETrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/good"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TVrate"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layer3"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/TVsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary:"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlSymmetry"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:id="@+id/ETsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open any image"
+            android:textSize="25sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layer4"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/TVpublishdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/published_date"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:textSize="28sp"
+            tools:ignore="RtlSymmetry"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/ETpublishdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2002_9_1"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
